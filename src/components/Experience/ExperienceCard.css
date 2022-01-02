@@ -1,0 +1,15 @@
+.experienceCard {
+  background-image: url("https://www.hilton.com/im/en/SJNHIHH/9954206/beach-cabana-retail-rail.jpg?impolicy=crop&cw=4500&ch=3000&gravity=NorthWest&xposition=0&yposition=0&rw=641&rh=427");
+  position: relative;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 350px;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+.h {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
