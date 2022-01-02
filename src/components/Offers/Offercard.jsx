@@ -13,8 +13,10 @@ card:{
 },
 
 button:{
-    color:'red',
-    borderColor:'red'
+    color:'#A68A3A',
+    borderColor:'#A68A3A',
+    marginTop:20,
+    marginLeft:80
 },
 image:{
     height:'20vh' ,
@@ -25,7 +27,23 @@ image:{
 },
 subTitle:{
     marginLeft:100
-}
+},
+date:{
+
+    marginBottom:10,
+    marginLeft:50
+},
+title:{
+    marginTop:10,
+    marginBottom:10
+},
+description:{
+    marginBottom:50
+},
+price:{
+    marginLeft:-18
+},
+
 }))
 
 function Offercard() {
@@ -38,6 +56,9 @@ function Offercard() {
                 </div>
                 <div className={classes.subTitle}>
                     <h5>Rooms & Suits</h5>
+                </div>
+                <div className={classes.date}>
+                    <p>05 NOV 2021 - 26 MAR 2022</p>
                 </div>
                 <div className={classes.title}>
                     <h3>Book Early and Save with Flexibility</h3>

@@ -4,13 +4,18 @@ import Offercard from './Offercard'
 
 const useStyles=makeStyles((theme)=>({
 offers:{
-    height:450,
+    height:550,
     margin:50,
 },
 row:{
     display:'flex'
 },
 Offercard:{
+    margin:50,
+    backgroundColor:'red'
+},
+title:{
+    textAlign:'center'
 }
 }))
 
@@ -19,7 +24,7 @@ function Offers() {
     return (
         <div className={classes.offers}>
             <div>
-                <h1>Offers</h1>
+                <h1 className={classes.title}>Offers</h1>
                 <div className={classes.row}>
                 <Offercard className={classes.Offercard} />
                 <Offercard/>

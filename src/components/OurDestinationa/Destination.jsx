@@ -7,7 +7,8 @@ const useStyles=makeStyles((theme)=>({
         display:'flex',
         flexDirection:'column',
         textAlign:'center',
-        margin:50
+        margin:50,
+        marginTop:120
     },
     title:{
         color:'#77328B'
