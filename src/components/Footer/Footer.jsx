@@ -11,6 +11,7 @@ const useStyles=makeStyles((theme)=>({
     custom:{
         display:'flex',
         margin:50,
+        position:'absolute',
         [theme.breakpoints.down('sm')]:{
             display:'flex',
             flexDirection:'column'
