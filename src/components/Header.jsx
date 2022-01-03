@@ -3,6 +3,7 @@ import React from 'react'
 import logo from "../images/logo.png"
 import PersonIcon from '@material-ui/icons/Person';
 import LanguageIcon from '@material-ui/icons/Language';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles=makeStyles((theme)=>({
     appBar:{
@@ -17,13 +18,18 @@ const useStyles=makeStyles((theme)=>({
         height:40,
         width:100,
         cursor:'pointer',
-        marginLeft:150
+        marginLeft:150,
+        [theme.breakpoints.down('md')]:{
+            marginLeft:30
+        }
+
     },
     headerItems:{
         color:'#333333',
         display:'flex',
         alignItems:'center',
         marginRight:200,
+        
     },
     ul:{
         textDecoration:'none',
@@ -36,12 +42,26 @@ const useStyles=makeStyles((theme)=>({
         textDecoration:'none',
         alignItems:'center',
         display:'flex',
-        marginLeft:20
+        marginLeft:20,
+        [theme.breakpoints.down('md')]:{
+            display:'none'
+        }
     },
     a:{
         textDecoration:'none',
         alignItems:'center',
         cursor:'pointer'
+    },
+    menuIcon:{
+        textDecoration:'none',
+        color:'black',
+        fontSize:"large",
+        alignItems:'center',
+        marginLeft:200,
+        display:'none',
+        [theme.breakpoints.down('md')]:{
+            display:'block'
+        }
     }
 }));
 
@@ -67,6 +87,7 @@ function Header() {
                                 <a className={classes.a}>English</a>
                             </li>
                             <li className={classes.li}><a className={classes.a}>LKR</a></li>
+                            <li><a href=""className={classes.menuIcon} ><MenuIcon/></a></li>
                         </ul>
                     </div>
                 </Toolbar>

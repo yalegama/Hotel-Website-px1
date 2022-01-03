@@ -25,7 +25,8 @@ const useStyles=makeStyles((theme)=>({
         }
     },
     informationCard:{
-        marginTop:50
+        marginTop:50,
+        
     },
     infoCard:{
         marginTop:50,

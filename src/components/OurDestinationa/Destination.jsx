@@ -18,7 +18,10 @@ const useStyles=makeStyles((theme)=>({
         color:'#77328B',
         fontFamily:'Vujahday Script, cursive',
         fontWeight:'bold',
-        fontSize:50
+        fontSize:50,
+        [theme.breakpoints.down('md')]:{
+            marginTop:50
+        }
     },
     formControll:{
     },
@@ -27,7 +30,7 @@ const useStyles=makeStyles((theme)=>({
         marginLeft:500,
         width:500,
         [theme.breakpoints.down('md')]:{
-            marginLeft:45,
+            marginLeft:5,
             width:400
         }
     },
