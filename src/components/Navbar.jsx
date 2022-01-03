@@ -42,7 +42,7 @@ const useStyles=makeStyles((theme)=>({
    icon:{
        marginBottom:-5,
        color:'white',
-       marginRight:25
+       marginRight:18
    }
 }))
 
@@ -58,8 +58,8 @@ function Navbar() {
                         <li className={classes.li}><a className={classes.a} href="">DINING</a> <ExpandMoreIcon className={classes.icon}/></li>
                         <li className={classes.li}><a className={classes.a} href="">EXPERIENCE</a> <ExpandMoreIcon className={classes.icon}/></li>
                         <li className={classes.li}><a className={classes.a} href="">EVENTS</a> <ExpandMoreIcon className={classes.icon}/></li>
-                        <li className={classes.li}><a className={classes.a} href="">GALLERY</a></li>
-                        <li className={classes.li}><a className={classes.a} href="">OFFERS</a></li>
+                        <li className={classes.li}><a className={classes.a} href="">GALLERY</a><span className={classes.icon}></span></li>
+                        <li className={classes.li}><a className={classes.a} href="">OFFERS</a><span className={classes.icon}></span></li>
                         <li className={classes.li}><a className={classes.a} href="">MORE</a> <ExpandMoreIcon className={classes.icon}/></li>
                     </ul>
                     <Button

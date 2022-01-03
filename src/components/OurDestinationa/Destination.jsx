@@ -11,7 +11,10 @@ const useStyles=makeStyles((theme)=>({
         marginTop:120
     },
     title:{
-        color:'#77328B'
+        color:'#77328B',
+        fontFamily:'Vujahday Script, cursive',
+        fontWeight:'bold',
+        fontSize:50
     },
     formControll:{
     },
@@ -23,6 +26,12 @@ const useStyles=makeStyles((theme)=>({
             marginLeft:45,
             width:400
         }
+    },
+    menuItem:{
+        fontFamily:'Vujahday Script, cursive',
+        color:'#2F317C',
+        fontSize:20,
+        fontWeight:'bold'
     }
 }))
 
@@ -40,12 +49,12 @@ function Destination() {
           value="None"
           inputProps={{ 'aria-label': 'Without label' }}
         >
-          <MenuItem value="">
+          <MenuItem className={classes.menuItem} value="">
             <em>None</em>
           </MenuItem>
-          <MenuItem value={10}>Habarana Village By Cinnomon</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem className={classes.menuItem} value={10}>Habarana Village By Cinnomon</MenuItem>
+          <MenuItem className={classes.menuItem} value={20}>Cinnamon Velifushi Maldives</MenuItem>
+          <MenuItem className={classes.menuItem} value={30}>Cinnamon Hakuraa Huraa Maldives</MenuItem>
         </Select>
       </FormControl>
             </div>

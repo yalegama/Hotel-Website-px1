@@ -6,17 +6,21 @@ const useStyles=makeStyles((theme)=>({
     informationCardSet:{
         WebkitBoxShadow: "0px 0px 20px 2px #000000",
         width:300,
-        height:400,
+        height:350,
         backgroundColor:'white'
     },
     information:{
-
     },
     title:{
-        margin:20
+        fontFamily:'Vujahday Script, cursive',
+        color:'#77328B',
+        marginTop:20,
+        fontSize:30,
+        marginLeft:10
     },
     description:{
-        margin:20
+        margin:20,
+        marginTop:60
     },
     button:{
         margin:20,

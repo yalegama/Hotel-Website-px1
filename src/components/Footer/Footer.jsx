@@ -22,7 +22,10 @@ const useStyles=makeStyles((theme)=>({
     },
     title:{
         color:'#77328B',
-        marginLeft:35
+        marginLeft:35,
+        fontFamily:'Vujahday Script',
+        fontWeight:'bold',
+        fontSize:20
     },
     a:{
         textDecoration:'none',

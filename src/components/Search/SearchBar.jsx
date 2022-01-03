@@ -67,7 +67,7 @@ buttonBox:{
     marginRight:8,
     textAlign:'center',
     alignItems:'center',
-    backgroundColor:'orange',
+    backgroundColor:'#876A20',
     color:'white',
     cursor:'pointer'
 },
