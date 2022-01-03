@@ -4,7 +4,11 @@ import "./OfferCard.css"
 
 const useStyles=makeStyles((theme)=>({
     cardBox:{
-       
+       WebkitBoxShadow: "0px 0px 3px 0px #000000",
+       height:520,
+       width:400,
+       marginTop:50,
+       alignItems:'center'
     },
 card:{
     height:200,
@@ -47,7 +51,7 @@ price:{
 
 }))
 
-function Offercard() {
+function Offercard({subTitle,date,title,description,price}) {
     const classes=useStyles();
     return (
         <div className={classes.cardBox}>
@@ -56,19 +60,19 @@ function Offercard() {
 
                 </div>
                 <div className={classes.subTitle}>
-                    <h5>Rooms & Suits</h5>
+                    <h5>{subTitle}</h5>
                 </div>
                 <div className={classes.date}>
-                    <p>05 NOV 2021 - 26 MAR 2022</p>
+                    <p>{date}</p>
                 </div>
                 <div className={classes.title}>
-                    <h3>Book Early and Save with Flexibility</h3>
+                    <h3>{title}</h3>
                 </div>
                 <div className={classes.description}>
-                    <p>Book in advance and save up to 20% with complimentary data changes</p>
+                    <p>{description}</p>
                 </div>
                 <div className={classes.price}>
-                    <h3>From LKR 28,408.80 Average Per Night</h3>
+                    <h3>{price}</h3>
                 </div>
                 <div>
                     <Button

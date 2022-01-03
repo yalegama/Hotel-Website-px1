@@ -14,7 +14,8 @@ const useStyles=makeStyles((theme)=>({
         position:'absolute',
         [theme.breakpoints.down('sm')]:{
             display:'flex',
-            flexDirection:'column'
+            flexDirection:'column',
+            marginTop:1200
         }
     },
     leftSide:{
