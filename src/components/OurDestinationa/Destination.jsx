@@ -1,8 +1,12 @@
 import { FormControl, makeStyles, MenuItem, Select } from '@material-ui/core'
 import React from 'react'
 import DestinationCard from './DestinationCard';
+import { useState } from 'react'
 
 const useStyles=makeStyles((theme)=>({
+
+    
+
     destination:{
         display:'flex',
         flexDirection:'column',
@@ -31,11 +35,21 @@ const useStyles=makeStyles((theme)=>({
         fontFamily:'Vujahday Script, cursive',
         color:'#2F317C',
         fontSize:20,
-        fontWeight:'bold'
+        fontWeight:'bold',
+
+    },
+    selectText:{
+        marginLeft:-150,
+        fontFamily:'Vujahday Script, cursive',
+        fontSize:25,
+        color:'#2F317C',
     }
 }))
 
 function Destination() {
+
+    const [select, setselect] = useState(" ")
+
     const classes=useStyles();
     return (
         <div>
@@ -46,11 +60,11 @@ function Destination() {
                 className={classes.formControll}>
         <Select
         className={classes.select}
-          value="None"
+          value={select}
           inputProps={{ 'aria-label': 'Without label' }}
         >
-          <MenuItem className={classes.menuItem} value="">
-            <em>None</em>
+          <MenuItem className={classes.menuItem} value={select}>
+            <div className={classes.selectText}>Habarana Village By Cinnomon</div>
           </MenuItem>
           <MenuItem className={classes.menuItem} value={10}>Habarana Village By Cinnomon</MenuItem>
           <MenuItem className={classes.menuItem} value={20}>Cinnamon Velifushi Maldives</MenuItem>

@@ -1,15 +1,26 @@
 .experienceCard {
-  background-image: url("https://www.hilton.com/im/en/SJNHIHH/9954206/beach-cabana-retail-rail.jpg?impolicy=crop&cw=4500&ch=3000&gravity=NorthWest&xposition=0&yposition=0&rw=641&rh=427");
   position: relative;
   background-repeat: no-repeat;
-  width: 280px;
-  height: 350px;
+  width: 380px;
+  height: 250px;
   margin: 5px;
   margin-bottom: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(10, 10, 24, 0.5)),
+    url("https://www.hilton.com/im/en/SJNHIHH/9954206/beach-cabana-retail-rail.jpg?impolicy=crop&cw=4500&ch=3000&gravity=NorthWest&xposition=0&yposition=0&rw=641&rh=427");
+}
+experienceCard:hover {
+  cursor: pointer;
 }
 .h {
-  display: flex;
-  flex-direction: column;
+  margin-left: 40;
+}
+.title2 {
+  margin-top: 140px;
   align-items: center;
-  justify-content: flex-end;
+  text-align: center;
+  color: aliceblue;
+}
+.title2:hover {
+  margin-top: 100px;
+  cursor: pointer;
 }

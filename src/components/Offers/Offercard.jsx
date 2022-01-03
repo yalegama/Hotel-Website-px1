@@ -4,6 +4,7 @@ import "./OfferCard.css"
 
 const useStyles=makeStyles((theme)=>({
     cardBox:{
+       
     },
 card:{
     height:200,
