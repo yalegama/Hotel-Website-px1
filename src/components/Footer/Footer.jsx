@@ -15,7 +15,8 @@ const useStyles=makeStyles((theme)=>({
         [theme.breakpoints.down('sm')]:{
             display:'flex',
             flexDirection:'column',
-            marginTop:1200
+            marginTop:900,
+            marginLeft:-5
         }
     },
     leftSide:{
@@ -30,9 +31,13 @@ const useStyles=makeStyles((theme)=>({
     },
     a:{
         textDecoration:'none',
-        color:'#DADAE2',
+        color:'#7B8286',
+        '&:hover': {
+           color:'black'
+         },
         
     },
+
     ul:{
         listStyle:'none'
     },
@@ -81,7 +86,8 @@ const useStyles=makeStyles((theme)=>({
         justifyContent:'center'     
     },
     paragraphText:{
-        fontSize:12
+        fontSize:12,
+        color:'#7B8286',
     }
 }))
 

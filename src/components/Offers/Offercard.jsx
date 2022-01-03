@@ -8,13 +8,21 @@ const useStyles=makeStyles((theme)=>({
        height:520,
        width:400,
        marginTop:50,
-       alignItems:'center'
+       alignItems:'center',
+       [theme.breakpoints.down('md')]:{
+           marginLeft:-30,
+           height:400
+       }
     },
 card:{
     height:200,
     color:'black',
     width:360,
     margin:50,
+    [theme.breakpoints.down('md')]:{
+       
+    }
+
 },
 
 button:{
@@ -28,7 +36,12 @@ image:{
       width:"20vw",
       backgroundSize:'cover',
       backgroundPosition:'center',
-      backgroundImage:`url("https://cinnamonweb.blob.core.windows.net/cinnamonweb-prd/media/DEST--Dhonveli_715X550-Q81.png")`
+      backgroundImage:`url("https://cinnamonweb.blob.core.windows.net/cinnamonweb-prd/media/DEST--Dhonveli_715X550-Q81.png")`,
+      [theme.breakpoints.down('md')]:{
+        height:'15vh' ,
+        width:"40vw",
+        marginLeft:50 
+    }
 },
 subTitle:{
     marginLeft:100
