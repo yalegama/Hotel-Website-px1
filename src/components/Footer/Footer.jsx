@@ -60,10 +60,12 @@ const useStyles=makeStyles((theme)=>({
     paragraph:{
         display:'flex',
         alignItems:'center',
-        width:650
+        width:650,
+        margin:20,
+        marginLeft:40
     },
     radio:{
-        marginTop:-60
+        marginTop:-10
     },
     leftSideSecondSectionTitle:{
         width:500
@@ -71,6 +73,14 @@ const useStyles=makeStyles((theme)=>({
     textField:{
         marginTop:20,
         width:300
+    },
+    massageBox:{
+        alignItems:'center',
+        textAlign:"center",
+        justifyContent:'center'     
+    },
+    paragraphText:{
+        fontSize:12
     }
 }))
 
@@ -143,18 +153,22 @@ function Footer() {
                         <h1 className={classes.leftSideSecondSectionTitle}>Get Cinnamon in your inbox</h1>
                     </div>
                     <div className={classes.message}>
-                        <Box>
-                            <TextField className={classes.textField} variant="outlined" />
-                            <Button>Send</Button>
+                        <Box className={classes.massageBox}>
+                            <TextField 
+                            className={classes.textField}
+                             variant="outlined"
+                             placeholder='Email Address'
+                             />
+                            {/* <Button>Send</Button> */}
                         </Box>
                     </div>
                     <div className={classes.paragraph}>
                     <FormControlLabel className={classes.radio}  control={<Radio />}  />
-                    <p>By giving confirmation you explicitly give 
+                    <p className={classes.paragraphText}>By giving confirmation you explicitly give 
                         consent for us to store and use this information
                         to service your <br /> requests. If you do not consent
                         we will not store any personal information and will be 
-                        unable to service your <br /> requests.
+                        unable to service <br /> your requests.
                     </p>
                     </div>
                 </div>

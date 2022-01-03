@@ -36,7 +36,7 @@ const useStyles=makeStyles((theme)=>({
         textDecoration:'none',
         alignItems:'center',
         display:'flex',
-        marginLeft:10
+        marginLeft:20
     },
     a:{
         textDecoration:'none',
