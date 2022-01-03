@@ -1,0 +1,29 @@
+.Curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+}
+
+.Curve ::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: black;
+  transform: translate(85%, 60%);
+}
+
+.Curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: blue;
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}

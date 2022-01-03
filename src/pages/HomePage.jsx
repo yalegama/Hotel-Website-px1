@@ -7,6 +7,7 @@ import Offers from '../components/Offers/Offers'
 import Destination from '../components/OurDestinationa/Destination'
 import Slider from '../components/slider/Slider'
 import SearchBar from '../components/Search/SearchBar'
+import Curve from '../components/Curve/Curve'
 
 function HomePage() {
     return (
@@ -19,6 +20,7 @@ function HomePage() {
             <Experience/>
             <Offers/>
             <Footer/>
+            <Curve/>
         </div>
     )
 }
